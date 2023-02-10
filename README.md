@@ -8,7 +8,7 @@ Paper: [https://arxiv.org/abs/2212.14227](https://arxiv.org/abs/2212.14227)
 
 Audio samples: [https://styletts-vc.github.io/](https://styletts-vc.github.io/)
 
-***Our work has been awarded [SLT 2022 Best Paper Award](https://slt2022.org/best-papers.php)**
+***Our work has been awarded [SLT 2022 Best Papers Award](https://slt2022.org/best-papers.php)**
 
 ## Pre-requisites
 1. Python >= 3.7
@@ -32,7 +32,7 @@ Second stage training:
 ```bash
 python train_second.py --config_path ./Configs/config.yml
 ```
-The repo is self-contained and you do not need to train the first stage model with the [StyleTTS](https://github.com/yl4579/StyleTTS) repo. You can run both consecutively and it will train both the first and second stage. The model will be saved in the format "epoch_1st_%05d.pth" and "epoch_2nd_%05d.pth". Checkpoints and Tensorboard logs will be saved at `log_dir`. 
+The repo is self-contained and you do not need to train the first stage model with the [StyleTTS](https://github.com/yl4579/StyleTTS) repo. You can run both commands consecutively and it will train both the first and second stage. The model will be saved in the format "epoch_1st_%05d.pth" and "epoch_2nd_%05d.pth". Checkpoints and Tensorboard logs will be saved at `log_dir`. 
 
 The data list format needs to be `filename.wav|transcription|speaker`, see [val_list.txt](https://github.com/yl4579/StyleTTS-VC/blob/main/Data/val_list.txt) as an example. The speaker information is needed in order to perform speaker-dependent adversarial training. 
 
