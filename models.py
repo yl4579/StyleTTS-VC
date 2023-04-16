@@ -473,8 +473,8 @@ class MelEncoder(nn.Module):
         self.conv_mel = nn.Sequential(weight_norm(nn.Conv1d(dim_in, dim_out // 4, kernel_size=7, padding=3)),
               ResBlk1d(dim_out // 4, dim_out // 2, normalize=True),
               ResBlk1d(dim_out // 2, dim_out // 2, normalize=True),
-              ResBlk1d(dim_out // 2, dim_out, normalize=True, downsample=True),
-              ResBlk1d(dim_out, dim_out, normalize=True),
+              ResBlk1d(dim_out // 2, dim_out, normalize=True),
+              ResBlk1d(dim_out, dim_out, normalize=True, downsample=True),
               ResBlk1d(dim_out, dim_out, normalize=True)
               )
         
