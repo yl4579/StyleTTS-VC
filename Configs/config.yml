@@ -47,7 +47,7 @@ loss_params:
     lambda_sty: 1. # style reconstruction loss (1st stage)
     
     TMA_epoch: 10 # TMA starting epoch (1st stage)
-    VC_epoch: -5 # VC starting epoch (1st stage), only fine-tune for VC for 5 epochs
+    VC_epoch: -1 # VC starting epoch (1st stage), only fine-tune for VC for 1 epochs
     TMA_CEloss: false # see https://github.com/yl4579/StyleTTS/issues/7
 
     lambda_feat: 1. # feature reconstruction loss (1st stage)
