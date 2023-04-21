@@ -17,9 +17,10 @@ Audio samples: [https://styletts-vc.github.io/](https://styletts-vc.github.io/)
 git clone https://github.com/yl4579/StyleTTS-VC.git
 cd StyleTTS
 ```
-3. Install python requirements: 
+3. Install requirements: 
 ```bash
-pip install SoundFile torchaudio munch torch pydub pyyaml librosa git+https://github.com/resemble-ai/monotonic_align.git
+pip install SoundFile torchaudio munch torch pydub pyyaml librosa phonemizer attrdict git+https://github.com/resemble-ai/monotonic_align.git
+sudo apt-get install espeak-ng
 ```
 4. Download and extract the [VCTK dataset](https://datashare.ed.ac.uk/handle/10283/3443). You need to downsample all files in `wav48_silence_trimmed` to 24 kHz and name the folder `wav24_silence_trimmed`. The vocoder, text aligner and pitch extractor are pre-trained on 24 kHz data, but you can easily change the preprocessing and re-train them using your own preprocessing. I will provide more receipes and pre-trained models later if I have time. If you are willing to help, feel free to work on other preprocessing methods. 
 
@@ -38,7 +39,11 @@ The data list format needs to be `filename.wav|transcription|speaker`, see [val_
 
 ## Inference
 
-Please refer to [inference.ipynb](https://github.com/yl4579/StyleTTS-VC/blob/main/Demo/Inference.ipynb) for details. 
+### Colab
+
+Please refer to this [colab notebook](https://colab.research.google.com/drive/1Y7WxQVfQkl0pPSxSXiN0MJsJwKARg6y-?usp=sharing) which runs end to end. Before you run the notebook you must copy the models, vocoder, and speech samples(a snapshot of these files as of 21/04/23 can be found [here](https://drive.google.com/drive/folders/17xEJ-Vx0HkGMhv35fraFvyIas7K3LhJ8?usp=sharing)) to a folder called "styletts" in the root folder of your google drive.
+
+### Pretrained Models
 
 The pretrained StyleTTS-VC on VCTK and Hifi-GAN on LibriTTS corpus in 24 kHz can be downloaded at [StyleTTS-VC Link](https://drive.google.com/file/d/1bJbj3alOSu51riHUQl4G1GOjlzulyg6M/view?usp=sharing) and [Hifi-GAN Link](https://drive.google.com/file/d/1RDxYknrzncGzusYeVeDo38ErNdczzbik/view?usp=sharing). 
 
