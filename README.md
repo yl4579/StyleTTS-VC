@@ -41,13 +41,11 @@ The data list format needs to be `filename.wav|transcription|speaker`, see [val_
 
 ### Colab
 
-Please refer to this [colab notebook](https://colab.research.google.com/drive/1Y7WxQVfQkl0pPSxSXiN0MJsJwKARg6y-?usp=sharing) which runs end to end. Before you run the notebook you must copy the models, vocoder, and speech samples(a snapshot of these files as of 21/04/23 can be found [here](https://drive.google.com/drive/folders/17xEJ-Vx0HkGMhv35fraFvyIas7K3LhJ8?usp=sharing)) to a folder called "styletts" in the root folder of your google drive.
+Please refer to this [colab notebook](https://colab.research.google.com/drive/1Y7WxQVfQkl0pPSxSXiN0MJsJwKARg6y-?usp=sharing) which runs end to end. A copy of this notebook is in the demo folder.
 
 ### Pretrained Models
 
 The pretrained StyleTTS-VC on VCTK and Hifi-GAN on LibriTTS corpus in 24 kHz can be downloaded at [StyleTTS-VC Link](https://drive.google.com/file/d/1bJbj3alOSu51riHUQl4G1GOjlzulyg6M/view?usp=sharing) and [Hifi-GAN Link](https://drive.google.com/file/d/1RDxYknrzncGzusYeVeDo38ErNdczzbik/view?usp=sharing). 
-
-Please unzip to `Models` and `Vocoder` respectivey and run each cell in the notebook. 
 
 ## Preprocessing
 
