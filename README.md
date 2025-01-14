@@ -40,7 +40,7 @@ The data list format needs to be `filename.wav|transcription|speaker`, see [val_
 
 Please refer to [inference.ipynb](https://github.com/yl4579/StyleTTS-VC/blob/main/Demo/Inference.ipynb) for details. 
 
-The pretrained StyleTTS-VC on VCTK and Hifi-GAN on LibriTTS corpus in 24 kHz can be downloaded at [StyleTTS-VC Link](https://drive.google.com/file/d/1bJbj3alOSu51riHUQl4G1GOjlzulyg6M/view?usp=sharing) and [Hifi-GAN Link](https://drive.google.com/file/d/1RDxYknrzncGzusYeVeDo38ErNdczzbik/view?usp=sharing). 
+The pretrained StyleTTS-VC on VCTK and Hifi-GAN on LibriTTS corpus in 24 kHz can be downloaded at [StyleTTS-VC Link](https://huggingface.co/yl4579/StyleTTS-VC/blob/main/Models.zip) and [Hifi-GAN Link](https://huggingface.co/yl4579/StyleTTS-VC/blob/main/Vocoder.zip). 
 
 Please unzip to `Models` and `Vocoder` respectivey and run each cell in the notebook. 
 
